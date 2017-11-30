@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 9000
+ADD target/nmsapplication.jar nmsapplication.jar
+ENTRYPOINT ["java","-jar","nmsapplication.jar"]

@@ -1,0 +1,92 @@
+<script>
+$(document).ready(function(){
+       $("div#sidebar-collapse").show();  
+	});
+</script> 
+
+<div class="row">
+			<div class="col-md-4" style="margin-left:19%">
+				<div class="panel panel-default bck">
+					<div class="panel-heading"> SNMP2 Network Topology</div>
+					<div class="panel-body">
+						<form class="form-horizontal form-bg" action="" method="post">
+							<fieldset>
+								<!-- Name input-->
+								<div class="form-group">
+									<label class="col-md-3 control-label" for="name">Name</label>
+									<div class="col-md-8">
+									<input id="name" name="name" placeholder="Your name" class="form-control" type="text">
+									</div>
+								</div>
+							
+								<!-- Email input-->
+								<div class="form-group">
+									<label class="col-md-3 control-label" for="email">E-mail</label>
+									<div class="col-md-8">
+										<input id="email" name="email" placeholder="Your email" class="form-control" type="text">
+									</div>
+								</div>
+								
+								<!-- List body -->
+								<div class="form-group">
+									<label class="col-md-3 control-label" for="message">List</label>
+									<div class="col-md-8" ng-init="names = ['Emil', 'Tobias', 'Linus'];">
+										<select>
+										<option ng-repeat="x in names">{{x}}</option>
+										</select>
+										
+									</div>
+								</div>
+								<div class="form-group">
+								
+									<label class="col-md-3 control-label" for="message">Button</label>
+									<div class="col-md-8" style="width: 70%">
+      <label class="radio-inline"><input type="radio" name="optradio">Option 1
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 2
+    </label>
+    <label class="radio-inline">
+    <input type="radio" name="optradio">Option 3
+									</label>  </div></div>
+								<!-- Form actions -->
+								<div>
+									<div class="col-md-12 widget-right">
+										<button type="submit" class="btn btn-default btn-md pull-right">Submit</button>
+										
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				
+				
+			</div>
+	<!-- ------------------------------1st section end----------------------------- -->
+<div class="col-md-4">
+				<div class="panel panel-default bck">
+					<div class="panel-heading"> Network</div>
+					<div class="panel-body">
+						<form class="form-horizontal form-bg" action="" method="post">
+							<fieldset>
+								<!-- Name input-->
+								<div class="form-group">
+									
+									<div class="col-md-8">
+									<img src="img/Network-topology.jpg" style="padding: 10% 20%; width: 168%; height: 250%; padding: 54px;">
+									</div>
+								</div>
+								<!-- Form actions -->
+								
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				
+			
+			</div><!--/.col-->		
+			<!--/.col-->
+		</div><!--/.row-->
+	
+		

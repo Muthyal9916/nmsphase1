@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RemoveUser</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="css/animate.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--Icons-->
+
+	<script type="text/javascript" language="javascript">
+
+    function checklist(ctrl)
+    {
+       
+        var list = document.getElementById("menu").getElementsByTagName('li');
+       
+        for(i=0; i<list.length; i++)
+        {
+            list[i].style.background = '#ffffff';
+        }
+       
+        ctrl.style.background = '#40a465';
+    }
+
+
+</script>
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+</head>
+
+<body onload='removeUser1()'>
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #45a0e3;" role="navigation">
+		<img src="img/tcslogo.png" width="218px" height="80px">
+		
+				<h3 style="float: right; color:#fffff">RemoveUser1</h3>
+			
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar collapse in">
+		
+	
+</div>
+		
+	
+	
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">		
+		<div class="row">
+			<ol class="breadcrumb">onclick="checklist(this);"
+				<li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li></ol>				
+		</div><!--/.row-->
+								
+		<div class="row" id="nms1">
+			<div class="col-xs-12 col-md-6 col-lg-3">
+				
+			</div>
+			
+				<div class="panel panel-widget">
+					<div class="row no-padding">
+						<div class="col-sm-12 col-lg-12 widget-left" id="">
+							<svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+		<!-- ----------------------------------Home page-------------------------------------- -->	
+			<!-- --------------- left Pannel------------------------- -->
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar collapse in" style="">
+		<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar collapse in" style="">
+		<form role="search">
+			
+		</form>
+		<ul class="mainmenu" id="menu">
+   <li style="background-color:#40a465"; onclick="checklist(this);"><a href="network-topology.html"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg>NMS</a></li>
+   
+    <li><a href="#!snmp22"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg>SNMP  <span class="glyphicon glyphicon-chevron-down"></span> </a>   
+      <ul class="submenu" >
+        <li onclick="checklist(this);"><a href="snmp.html">SystemInfo</a></li>
+        <li><a href="polling.html">Polling</a></li>
+       <li><a href="graph.html">Graph</a></li>
+         <li><a href="arp.html">Arp</a></li>
+      </ul>
+    </li>
+    <li><a href="#!netconf"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg>Netconf <span class="glyphicon glyphicon-chevron-down"></span> </a>   
+      <ul class="submenu" >
+        <li onclick="checklist(this);"><a href="showuser.html">showuser</a></li>
+        <li><a href="adduser.html">Adduser</a></li>
+        <li><a href="removeuser.html">Removeuser</a></li>
+         <li><a href="removeuser1.html" >Removeuser1</a></li>
+      </ul>
+    </li>
+    
+  </ul>
+		
+	</div>
+		
+	</div>
+		
+	<!-- ------------------------------Left panel end------------------------->
+			
+	<!-- -----------------------------Body start------------------------>
+	<script>
+
+</script> 
+
+<div class="container">
+
+<div class="row">
+			<div class="col-md-4" style="margin-left:19%">
+				<div class="panel panel-default bck" style="height: 388px;width: 724px;">
+					<div class="panel-heading">RemoveUsers1</div>
+					<div class="panel-body" style="height:300px;">
+							<fieldset>
+									<div class="form-group">
+								IpAddress: <select id="ipaddressRemoveUser1"
+									style="width:128px;">
+									
+								   </select>
+							&nbsp;
+								UserNames: <select id="removeusers1"
+									style="width:128px;">
+									
+								   </select>
+								   <button type="submit" class="btn btn-default btn-md pull-right" style="width:90px;margin-right: 173px;" id="showremoveuser1Submit">ShowUsers</button>
+								   &nbsp;
+								   <button type="submit" class="btn btn-default btn-md pull-right" style="width: 109px;margin-right: -217px;margin-top: -20px;" id="removeuser1Submit">RemoveUsers</button>
+								</div>
+								
+								<div>
+									<div class="col-md-12 widget-right">
+										   <div> <textarea style="height:220px;width:667px;" id="removeUser1Info"></textarea>  </div>
+										
+									</div>
+								</div>
+							</fieldset>
+					</div>
+				</div>				
+			</div>
+		</div><!--/.row-->
+	
+		
+<!-- ------------------------------Home page End---------------------------------- -->	
+		</div>	<!--/.main-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/app.js"></script>
+	
+	
+</body>
+
+</html>
